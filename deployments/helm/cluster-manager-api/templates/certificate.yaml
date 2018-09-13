@@ -9,9 +9,11 @@ spec:
         provider: route53
       domains:
       - {{ .Values.ingress.rest.host }}
+      - {{ .Values.ingress.grpc.host }}
   commonName: {{ .Values.ingress.rest.host }}
   dnsNames:
   - {{ .Values.ingress.rest.host }}
+  - {{ .Values.ingress.grpc.host }}
   issuerRef:
     name: {{ .Values.name }}-issuer
   secretName: {{ .Values.name }}-tls

@@ -15,6 +15,9 @@ ingress:
   rest:
     name: cma
     host: cma.ontario.cluster.cnct.io
+  grpc:
+    name: cma-grpc
+    host: cma-grpc.ontario.cluster.cnct.io
 issuer:
   email: mvenezia@gmail.com
   region: us-east-1
