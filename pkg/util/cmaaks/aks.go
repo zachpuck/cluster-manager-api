@@ -130,7 +130,7 @@ func (a *Client) DeleteCluster(input DeleteClusterInput) (DeleteClusterOutput, e
 		return DeleteClusterOutput{}, err
 	}
 	output := DeleteClusterOutput{
-		Status: result.Status,
+		Status: result.Status.String(),
 	}
 	return output, nil
 }
